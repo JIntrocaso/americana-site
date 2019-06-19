@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { FeaturedArtistsComponent } from './components/featured-artists/featured-artists.component';
+import { HttpClient } from '@angular/common/http'
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FeaturedArtistsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]
